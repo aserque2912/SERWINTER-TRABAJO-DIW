@@ -1,0 +1,91 @@
+:root {
+  --primary-color: #067CFF; /* Azul oscuro */
+  --secondary-color: #210BFF; /* Verde azulado */
+  --accent-color: #00FFB2; /* Azul claro */
+  --light-bg: #004795; /* Gris claro */
+  --text-color: #6253FD; /* Gris oscuro */
+  --footer-bg: #009769; /* Gris azulado */
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem; /* Tamaño de la fuente */
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* Puedes ajustar el grosor de la fuente aquí */
+  color: #08002e; /* Color del texto */
+  transition: transform 0.3s; /* Transición suave al hacer hover */
+}
+
+.nav-link:hover {
+  transform: scale(1.1); /* Efecto al pasar el ratón */
+  color: #0056b3; /* Cambia a otro color al pasar el ratón */
+}
+
+/* Carrusel */
+.carousel-inner img {
+  height: 350px; /* Aumenta la altura del carrusel */
+  object-fit: cover;
+}
+
+.carousel-caption h5, .carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Botón de control de carrusel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Color textos sueltos */
+.text-center{
+  color: #ddd8ff;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: #ffffff;
+}
+
+footer a {
+  color: var(--accent-color);
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+.card {
+  border: 1px solid #007bff;
+  transition: transform 0.3s; /* Transición suave */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Escalar la card al pasar el ratón */
+}
+
+.card-img-top {
+  height: 200px; /* Ajusta la altura de la imagen */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
